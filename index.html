@@ -54,7 +54,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="benefits section">
@@ -91,28 +91,43 @@
           <h2 class="section-title title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-list-item">
-              <img
-                src="./images/box1.jpg"
-                alt="Руки на клавиатуре перед монитором"
-                width="370"
-                height="294"
-              />
+              <div class="work-list-overlay">
+                <img
+                  src="./images/box1.jpg"
+                  alt="Руки на клавиатуре перед монитором"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-overlay-description">
+                  <p class="work-overlay-text">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="work-list-item">
-              <img
-                src="./images/box2.jpg"
-                alt="Смартфон в руке и вторая рука на тачпаде"
-                width="370"
-                height="294"
-              />
+              <div class="work-list-overlay">
+                <img
+                  src="./images/box2.jpg"
+                  alt="Руки на клавиатуре перед монитором"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-overlay-description">
+                  <p class="work-overlay-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="work-list-item">
-              <img
-                src="./images/box3.jpg"
-                alt="Планшет с цветовой палитрой"
-                width="370"
-                height="294"
-              />
+              <div class="work-list-overlay">
+                <img
+                  src="./images/box3.jpg"
+                  alt="Руки на клавиатуре перед монитором"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-overlay-description">
+                  <p class="work-overlay-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -385,5 +400,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <img src="./images/family.jpg" alt="family" />
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
